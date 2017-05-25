@@ -38,7 +38,8 @@ public class UIM {
     public static void main(String[] args) throws FileNotFoundException {
         UIM uim = new UIM();
         uim.LeerRegistro();
-        uim.EscribirRegistro();
+        //uim.EscribirRegistro("Salida.txt");
+        uim.EscribirPromedio("SalidaP.txt");
     }
 
     public String Promedios() {
@@ -64,6 +65,7 @@ public class UIM {
             int cant = entrada.nextInt();
             System.out.println(cant);
             this.ciudades[i].PopulateEstaciones(cant, entrada, "00/00/0000");
+            i++;
         }
         entrada.close();
     }
