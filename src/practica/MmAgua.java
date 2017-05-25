@@ -12,7 +12,7 @@ public class MmAgua extends Sensor {
 
     @Override
     protected void addRegistro(int registro, String fecha) {
-        this.registros.put(fecha,registro);
+        this.registros.put(fecha, registro);
         this.datos.add(registro);
     }
 
@@ -32,5 +32,5 @@ public class MmAgua extends Sensor {
         }
         return total;
     }
-    
+
 }

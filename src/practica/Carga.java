@@ -5,6 +5,7 @@ package practica;
  * @author Estudiante
  */
 public class Carga extends Sensor {
+
     private int valNivel;
     private String nombreNivel;
 
@@ -16,7 +17,7 @@ public class Carga extends Sensor {
 
     @Override
     protected void addRegistro(int registro, String fecha) {
-        this.registros.put(fecha,registro);
+        this.registros.put(fecha, registro);
         this.datos.add(registro);
         this.setValNivel(registro);
         this.setNombreNivel(this.putNombre());
@@ -41,10 +42,10 @@ public class Carga extends Sensor {
         }
         return total;
     }
-    
+
     public final String putNombre() {
         String n = "";
-        switch(this.valNivel){
+        switch (this.valNivel) {
             case 1:
                 n = "Tormenta Eléctrica";
                 break;
@@ -76,5 +77,5 @@ public class Carga extends Sensor {
     public void setNombreNivel(String nombreNivel) {
         this.nombreNivel = nombreNivel;
     }
-    
+
 }

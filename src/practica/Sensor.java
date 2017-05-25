@@ -8,6 +8,7 @@ import java.util.HashMap;
  * @author Estudiante
  */
 public abstract class Sensor {
+
     protected String marca;
     protected String referencia;
     protected String fecha;
@@ -20,9 +21,11 @@ public abstract class Sensor {
         this.referencia = referencia;
         this.fecha = fecha;
     }
-    
+
     protected abstract void addRegistro(int registro, String fecha);
+
     protected abstract int getRegistroFecha(String FechaDelRegistro);
+
     protected abstract double calcPromedio();
 
     public String getMarca() {
@@ -71,6 +74,6 @@ public abstract class Sensor {
 
     public void setDatos(ArrayList<Integer> datos) {
         this.datos = datos;
-    }  
-    
+    }
+
 }
